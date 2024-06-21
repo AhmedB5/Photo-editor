@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filters</title>
+    <link rel="stylesheet" href="muster.css" />
+    <link rel="stylesheet" href="bondi.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+  <body>
+    <div class="container pb-1">
+      <div class="row">
+        <div class="myImg col-lg-7 col-md-7 col-sm-5 pt-1">
+          <img id="jsImg" />
+          <canvas id="canvas"></canvas>
+          <input type="file" id="myfile" class="d-none ahmeds" />
+          <label for="myfile" class="text-white upload"> chose file</label>
+        </div>
+
+        <div class="filters col-lg-5 col-md-5 col-sm-5 text-white">
+          <ul class="mt-4">
+            <li>
+              <label for="saturate">Saturate</label>
+              <input type="range" id="saturate" min="0" max="200" value="100" />
+            </li>
+            <li>
+              <label for="contrast">Contrast</label>
+              <input type="range" id="contrast" min="0" max="200" value="100" />
+            </li>
+            <li>
+              <label for="brightness">Brightness</label>
+              <input
+                type="range"
+                id="brightness"
+                min="0"
+                max="200"
+                value="100" />
+            </li>
+            <li>
+              <label for="sepia">Sepia</label>
+              <input type="range" id="sepia" min="0" max="200" value="0" />
+            </li>
+            <li>
+              <label for="grayscale">Grayscale</label>
+              <input
+                type="range"
+                id="grayscale"
+                step="0.1"
+                min="0"
+                max="1"
+                value="0" />
+            </li>
+            <li>
+              <label for="blur">Bluer</label>
+              <input type="range" id="blur" min="0" max="10" value="0" />
+            </li>
+            <li>
+              <label for="hue-rotate">Hue-rotate</label>
+              <input type="range" id="hue-rotate" min="0" max="350" value="0" />
+            </li>
+
+            <li class="buttons">
+              <a download="image" id="download" class="btn btn-success">
+                Download</a
+              >
+              <span class="btn btn-success" id="rest">Rest</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

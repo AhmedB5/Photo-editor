@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #333 !important;
+}
+.container {
+  background-color: #222;
+  width: 80vw;
+  border-radius: 10px;
+}
+.myImg {
+  height: 533px;
+  background-color: rgb(12, 12, 11);
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes moveUpAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.myImg label {
+  position: absolute;
+  bottom: 0;
+  border: 2px dashed;
+  padding: 6px 20px;
+  cursor: pointer;
+  animation-name: moveUpAndDown;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.ahmed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filters {
+  display: block;
+  background-color: rgba(3, 20, 35, 0.825);
+  text-align: center;
+}
+
+.filters ul li {
+  list-style: none;
+  color: rgb(147, 166, 181) !important;
+}
+.filters ul li input {
+  direction: rtl;
+}
+.filters input {
+  width: 99%;
+  accent-color: white;
+}
+#jsImg,
+canvas {
+  max-width: 95%;
+  max-height: 85%;
+  margin-top: 10px;
+
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.buttons #download,
+.buttons span {
+  width: 100px;
+  color: #222;
+}
+.buttons #download:hover {
+  color: rgb(238, 237, 237);
+}
